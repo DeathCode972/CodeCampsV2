@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+    
+    <title>Simple Parallax Scrolling Effect</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="jquery-2.1.3.js"></script>
+    <!-- js -->
+    <script src="js/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $("#click").click(function(){
+      $("html, body").animate({scrollTop: $("#div1").offset().top}, 2000)});
+
+      $("#click2").click(function() {
+      $("html, body").animate({ scrollTop: $(document).height()}, 2000);});
+    });  
+    </script>
+    
+  </head>
+  
+  <body>
+    <main>
+      <section class="module parallax parallax-1">
+	<div id="div1" class="container">
+	  <h1>PARALLAX</h1>
+	</div>
+      </section>  
+      <span>
+      <input id="click2" type="image" src="img/down.png" weith="50" height="50"></input>
+      <style type="text/css">
+        input {
+          position: absolute;
+          right: 0px;
+          }
+      </style>
+     </span>  
+      <section class="module content">
+	<div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+	</div>
+      </section>
+      
+      <section class="module parallax parallax-2">
+	<div class="container">
+          <h1>SCROLLING</h1>
+	</div>
+      </section>
+      
+      <section class="module content">
+	<div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+	</div>
+      </section>
+
+    <span>
+      <input id="click" type="image" src="img/up.png" weith="50" height="50"></input>
+      <style type="text/css">
+        input {
+          position: absolute;
+          right: 0px;
+          }
+      </style>
+     </span>
+		 
+    </main><!-- /main -->
+    
+    
+    <!-- ads -->
+    <script src="js/fusionad.js"></script>
+    
+    <!-- analytics -->
+    <script type="text/javascript">
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
